@@ -1,0 +1,21 @@
+// Styles
+@import '../../Styles/_colors.scss';
+
+.button{
+    align-items: center;
+    border: 0;
+    background-color: transparent;
+    color: $grey-dark;
+    display: flex;
+    font-size: 16px;
+    font-weight: 700;
+    justify-content: center;
+    height: 24px;
+    padding: 0 16px;
+    line-height: 1;
+    width: 24px;
+    cursor: pointer;
+}
+.disabled{
+    display: none;
+}

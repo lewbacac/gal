@@ -1,0 +1,72 @@
+@import '../../Styles/_colors.scss';
+
+.user{
+    &__container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 8px 16px 16px;
+    }
+    &__panel{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 16px;
+    }
+    &__table__container{
+        display: flex;
+        width: 100%;
+    }
+    &__table{
+        display: table;
+        width: 100%;
+        font-weight: 500;
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+        letter-spacing: 0.01071em;
+        vertical-align: inherit;
+        border-bottom: 1px solid rgb(224, 224, 224);
+        text-align: left;
+        color: $dark;
+        border-collapse: collapse;
+        background-color: rgb(255, 255, 255);
+        border-radius: 4px;
+        box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px, rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
+        overflow-x: auto;
+
+        thead{
+            display: table-header-group;
+        }
+        tbody{
+            display: table-row-group;
+        }
+        tbody tr:nth-child(2n + 1) {
+            background-color:$grey;
+        }
+        th{
+            font-weight: 500;
+            font-size: 0.875rem;
+            line-height: 1.5rem;
+            letter-spacing: 0.01071em;
+            display: table-cell;
+            vertical-align: inherit;
+            border-bottom: 1px solid rgb(224, 224, 224);
+            text-align: left;
+            padding: 16px;
+            color: rgba(0, 0, 0, 0.87);
+        }
+    }
+    &__button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 16px;
+    }
+    &__pagination{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

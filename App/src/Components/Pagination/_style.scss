@@ -1,0 +1,58 @@
+// Style
+@import '../../Styles/_colors.scss';
+
+.pagination{
+    display: flex;
+    flex-direction: row;
+    margin: 0px 16px;
+    &__link{
+        padding: 6px 16px;
+        color: $blue;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 0.875rem;
+        line-height: 1.75;
+        letter-spacing: 0.02857em;
+        text-transform: uppercase;
+        width: inherit;
+        height: inherit;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid $blue-border;
+        &:active {
+            background-color: $blue;
+            color: $white;
+            border: 1px solid $blue;
+         }
+         &:hover {
+            border-color: $blue;
+            background-color: #f7fafd;
+         }
+         &:first-child {
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            margin-right: -1px;
+         }
+         &:last-child {
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            margin-left: -1px;
+         }
+
+         &:focus{
+            background-color: $blue;
+            color: $white;
+         }
+
+        &:only-child {
+            border-radius: 6px;
+            margin-left: 0;
+        }
+    }
+    .active{
+        background-color: $blue;
+        color: $white;
+        border: 1px solid $blue;
+    }
+}

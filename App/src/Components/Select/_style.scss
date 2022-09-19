@@ -1,0 +1,98 @@
+// Styles
+@import '../../Styles/_colors.scss';
+
+.dropdown{
+    position: relative;
+    width: 100px;
+    flex-direction: column;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.4375em;
+    letter-spacing: 0.00938em;
+    color: rgba(0, 0, 0, 0.87);
+    display: flex;
+    min-height: 57px;
+    align-items: center;
+    justify-content: center;
+    &__focus{
+          outline: 2px solid #1976d2;
+          border: none;
+    }
+    &__tool{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &__tools{
+      position: absolute;
+      right: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+    &__selected-value{
+      margin-right: 14px;
+    }
+    &__input {
+      padding: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      user-select: none;
+      padding: 16px 4px;
+      height: auto;
+      min-height: 1.4375em;
+      text-align: left;
+      border: 1px solid #ccc;
+      position: relative;
+      border-radius: 5px;
+      width: 100px;
+      flex-direction: column;
+      font-weight: 400;
+      font-size: 1rem;
+      line-height: 1.4375em;
+      letter-spacing: 0.00938em;
+      color: rgba(0, 0, 0, 0.87);
+      box-sizing: border-box;
+      display: flex;
+      border: 1px solid #c4c4c4;
+      border-radius: 4px;
+      min-height: 57px;
+      align-items: center;
+      justify-content: center;
+    }
+    &__menu {
+      transform: translateY(4px);
+      width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      overflow: auto;
+      max-height: 150px;
+      background-color: white;
+      z-index: 1;
+      box-sizing: content-box;
+      border: 1px solid $white;
+      position: absolute;
+      top: 55px;
+      left: 0;
+      margin: 0px;
+      padding: 8px 0;
+      outline: 0;
+      background-color: $white;
+      display: flex;
+      flex-direction: column;
+      box-shadow: rgb(0 0 0 / 20%) 0px 5px 5px -3px, rgb(0 0 0 / 14%) 0px 8px 10px 1px, rgb(0 0 0 / 12%) 0px 3px 14px 2px;
+    }
+    &__item {
+      padding: 5px;
+      cursor: pointer;
+      text-align: center;
+      &:hover {
+        background-color: #f3f3f3;
+      }
+    }
+}
+.selected{
+  background-color: rgba(25, 118, 210, 0.08);
+  color: currentColor;
+}

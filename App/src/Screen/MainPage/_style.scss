@@ -1,0 +1,10 @@
+// Styles
+@import '../../Styles/_colors.scss';
+
+.main{
+    background-color: $white;
+    &__header1{
+        margin-bottom: 30px;
+        margin: 16px;
+    }
+}
